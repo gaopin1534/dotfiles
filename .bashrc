@@ -19,3 +19,16 @@ alias ps='ps --sort=start_time'
 
 # プロンプトの表示をカスタマイズ
 export PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \[\033[00m\]$\[\033[00m\]'
+
+#Bash Options
+shopt -s autocd
+shopt -s cdspell
+shopt -s dotglob
+shopt -s extglob
+shopt -s globstar
+
+#commands
+#直前の履歴 30件を表示する。引数がある場合は過去 1000件を検索
+function i {
+    if [ "$1" ]; then history 1000 | grep "$@"; else history 30; fi
+}
