@@ -132,12 +132,27 @@ alias mv='mv -i'
 
 alias mkdir='mkdir -p'
 
+alias cdsrc='cd ~/src'
+
+# javaの文字コード対策
+alias javac='javac -J-Dfile.encodeing=UTF-8'
+alias java='java -Dfile.encoding=UTF-8'
+
 # sudo の後のコマンドでエイリアスを有効にする
 alias sudo='sudo '
 
 # グローバルエイリアス
 alias -g L='| less'
 alias -g G='| grep'
+
+# pecoの設定
+function peco-history-selection(){
+    BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
+    CURSOR=$#BUFFER
+    zle reset-prompt
+}
+zle -N peco-history-selection
+bindkey '^R' peco-history-selection
 
 # C で標準出力をクリップボードにコピーする
 # mollifier delta blog : http://mollifier.hatenablog.com/entry/20100317/p1
@@ -167,3 +182,5 @@ case ${OSTYPE} in
         alias ls='ls -F --color=auto'
         ;;
 esac
+
+
