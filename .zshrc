@@ -1,13 +1,14 @@
-export GOPATH=$HOME
-export PATH=$PATH:$GOPATH/bin
+
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"
-export EDITOR="vim"
+eval "$(direnv hook bash)"
+
 
 #環境変数
 export LANG=ja_JP.UTF-8
-
-
+export GOPATH=$HOME
+export PATH=$PATH:$GOPATH/bin
+export EDITOR="vim"
 # 色を使用出来るようにする
 autoload -Uz colors
 colors
@@ -182,5 +183,3 @@ case ${OSTYPE} in
         alias ls='ls -F --color=auto'
         ;;
 esac
-
-
