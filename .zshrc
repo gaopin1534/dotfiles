@@ -6,7 +6,7 @@ export EDITOR="vim"
 
 #環境変数
 export LANG=ja_JP.UTF-8
-
+export SLACK_TOKEN='xoxp-18360658659-32000334689-46871956581-496f234539'
 
 # 色を使用出来るようにする
 autoload -Uz colors
@@ -113,6 +113,9 @@ setopt extended_glob
 
 # lsの色設定
 export LSCOLORS=cxfxcxdxbxegedabagacad
+
+# homebrewで重複パスを登録しない
+typeset -U path cdpath fpath manpath
 
 ########################################
 # キーバインド
