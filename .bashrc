@@ -3,6 +3,7 @@ export PATH=$PATH:$GOPATH/bin
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"
 export EDITOR="vim"
+eval "$(direnv hook bash)"
 
 # ctrl+s で出力がロックされてしまうのを防ぐ
 stty stop undef
