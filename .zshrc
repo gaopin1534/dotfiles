@@ -23,7 +23,9 @@ HISTFILE=~/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
 # プロンプト
-  PROMPT="%{$fg[cyan]%}%n@%m %{$fg[magenta]%}%~ ${reset_color}%(!.#.$)"
+FACE_CHAR=("(*´ω｀*)" "(･∀･)ﾉ " "( ﾟД ﾟ ) " "(｡╹ω ╹｡)" "(´・ω・｀)")
+  PROMPT="%{$fg[magenta]%}%~
+%{$fg[cyan]%} $FACE_CHAR[$[$RANDOM % ${#FACE_CHAR[@]} + 1]] ${reset_color}%(!.#.$)"
 
 
 # 単語の区切り文字を指定する
