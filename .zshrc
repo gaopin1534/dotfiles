@@ -23,7 +23,7 @@ HISTFILE=~/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
 # プロンプト
-FACE_CHAR=("(*´ω｀*)" "(･∀･)ﾉ " "( ﾟД ﾟ ) " "(｡╹ω ╹｡)" "(´・ω・｀)")
+FACE_CHAR=("(*´ω｀*)" "(･∀･)ﾉ " "( ﾟД ﾟ ) " "(｡╹ω ╹｡)" "(´・ω ・｀)")
   PROMPT="%{$fg[magenta]%}%~
 %{$fg[cyan]%} $FACE_CHAR[$[$RANDOM % ${#FACE_CHAR[@]} + 1]] ${reset_color}%(!.#.$)"
 
