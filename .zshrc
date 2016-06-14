@@ -24,7 +24,7 @@ HISTSIZE=1000000
 SAVEHIST=1000000
 # プロンプト
 FACE_CHAR=("(*´ω｀*)" "(･∀･)ﾉ " "( ﾟД ﾟ ) " "(｡╹ω ╹｡)" "(´・ω ・｀)")
-  PROMPT="%{$fg[magenta]%}%~
+  PROMPT="%{$fg[yellow]%}%~
 %{$fg[cyan]%} $FACE_CHAR[$[$RANDOM % ${#FACE_CHAR[@]} + 1]] ${reset_color}%(!.#.$)"
 
 
