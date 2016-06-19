@@ -1,7 +1,7 @@
 
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"
-eval "$(direnv hook bash)"
+eval "$(direnv hook zsh)"
 
 
 #環境変数
