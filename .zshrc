@@ -1,6 +1,6 @@
 
 eval "$(pyenv init -)"
-eval "$(direnv hook bash)"
+eval "$(direnv hook zsh)"
 
 #環境変数
 export LANG=ja_JP.UTF-8
