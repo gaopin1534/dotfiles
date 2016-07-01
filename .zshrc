@@ -1,16 +1,20 @@
 
-eval "$(rbenv init -)"
 eval "$(pyenv init -)"
 eval "$(direnv hook bash)"
 
-
 #環境変数
 export LANG=ja_JP.UTF-8
-export SLACK_TOKEN='xoxp-18360658659-32000334689-46871956581-496f234539'
 export GOPATH=$HOME
 export PATH=$PATH:$GOPATH/bin
 export EDITOR="vim"
-
+export LC_ALL=ja_JP.UTF-8
+export PATH=$PATH:"/opt/local/bin:/opt/local/sbin"
+setopt no_global_rcs
+# anyenv
+if [ -d $HOME/.anyenv ] ; then
+   export PATH="$HOME/.anyenv/bin:$PATH"
+   eval "$(anyenv init -)"
+fi
 # 色を使用出来るようにする
 autoload -Uz colors
 colors
