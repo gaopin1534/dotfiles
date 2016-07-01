@@ -1,5 +1,3 @@
-
-eval "$(pyenv init -)"
 eval "$(direnv hook zsh)"
 
 #環境変数
@@ -14,6 +12,10 @@ setopt no_global_rcs
 if [ -d $HOME/.anyenv ] ; then
    export PATH="$HOME/.anyenv/bin:$PATH"
    eval "$(anyenv init -)"
+   for D in `ls $HOME/.anyenv/envs`
+   do
+      export PATH="$HOME/.anyenv/envs/$D/shims:$PATH"
+   done
 fi
 # 色を使用出来るようにする
 autoload -Uz colors
