@@ -159,6 +159,9 @@ alias sudo='sudo '
 alias -g L='| less'
 alias -g G='| grep'
 
+#git
+alias git graph='git log --graph --branches --pretty=format:"%d [%h] \"%s\""'
+
 # pecoの設定
 function peco-history-selection(){
     BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
