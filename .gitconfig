@@ -1,0 +1,5 @@
+[merge]
+    keepBackup = false;
+    tool = kdiff3
+[diff]
+    external = kdiff3

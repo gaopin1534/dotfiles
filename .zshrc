@@ -160,7 +160,7 @@ alias -g L='| less'
 alias -g G='| grep'
 
 #git
-alias git graph='git log --graph --branches --pretty=format:"%d [%h] \"%s\""'
+alias ggraph='git log --graph --oneline --decorate=full'
 
 # pecoの設定
 function peco-history-selection(){
