@@ -148,6 +148,7 @@ alias mkdir='mkdir -p'
 
 alias cdsrc='cd ~/src'
 
+alias phpinstall='PHP_BUILD_CONFIGURE_OPTS="--with-openssl=$(brew --prefix openssl) --with-libxml-dir=$(brew --prefix libxml2)" PHP_BUILD_EXTRA_MAKE_ARGUMENTS=-j4 phpenv install'
 # javaの文字コード対策
 alias javac='javac -J-Dfile.encodeing=UTF-8'
 alias java='java -Dfile.encoding=UTF-8'
