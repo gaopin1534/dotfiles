@@ -136,8 +136,8 @@ bindkey '^R' history-incremental-pattern-search-backward
 
 ########################################
 # エイリアス
-alias showdots='defaults write com.apple.finder AppleShowAllFiles TRUE'
-alias hidedots='defaults write com.apple.finder AppleShowAllFiles FALSE'
+alias showdots='defaults write com.apple.finder AppleShowAllFiles TRUE;killall Finder'
+alias hidedots='defaults write com.apple.finder AppleShowAllFiles FALSE;killall Finder'
 alias la='ls -a'
 alias ll='ls -l'
 
