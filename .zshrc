@@ -136,6 +136,8 @@ bindkey '^R' history-incremental-pattern-search-backward
 
 ########################################
 # エイリアス
+alias g='git'
+alias gl='git log --oneline'
 alias showdots='defaults write com.apple.finder AppleShowAllFiles TRUE;killall Finder'
 alias hidedots='defaults write com.apple.finder AppleShowAllFiles FALSE;killall Finder'
 alias la='ls -a'
@@ -162,7 +164,7 @@ alias -g L='| less'
 alias -g G='| grep'
 
 #git
-alias ggraph='git log --graph --oneline --decorate=full'
+alias gg='git log --graph --oneline --decorate=full'
 
 # pecoの設定
 function peco-history-selection(){
