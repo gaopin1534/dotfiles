@@ -33,6 +33,8 @@ FACE_CHAR=("(*´ω｀*)" "(･∀･)ﾉ " "( ﾟД ﾟ ) " "(｡╹ω ╹｡)" 
   PROMPT="%{$fg[yellow]%}%~
 %{$fg[cyan]%} $FACE_CHAR[$[$RANDOM % ${#FACE_CHAR[@]} + 1]] ${reset_color}%(!.#.$)"
 
+#右プロンプトに入力がきたら消す
+setopt TRANSIENT_RPROMPT
 
 # 単語の区切り文字を指定する
 autoload -Uz select-word-style
