@@ -1,5 +1,6 @@
 eval "$(direnv hook zsh)"
-
+autoload -Uz vcs_info
+autoload -Uz add-zsh-hook
 #環境変数
 export LANG=ja_JP.UTF-8
 export GOPATH=$HOME
@@ -29,7 +30,7 @@ HISTFILE=~/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
 # プロンプト
-FACE_CHAR=("(*´ω｀*)" "(･∀･)ﾉ " "( ﾟД ﾟ ) " "(｡╹ω ╹｡)" "(´・ω ・｀)" "٩(\`･ω ･´)و")
+FACE_CHAR=("(*´ω｀*)" "(･∀･)ﾉ " "( ﾟД ﾟ ) " "(｡╹ω ╹｡)" "(´・ω ・｀)" "٩(\`･ω ･´)و" "(๑˃̵ᴗ˂̵)و" "( ･⊝･ )" "(p*･ω ･)p")
 function _update_prompt_with_cute_faces() {
   PROMPT="%{$fg[yellow]%}%~
 %{$fg[cyan]%} $FACE_CHAR[$[$RANDOM % ${#FACE_CHAR[@]} + 1]] ${reset_color}%(!.#.$)"
@@ -71,8 +72,6 @@ zstyle ':completion:*:processes' command 'ps x -o pid,s,args'
 
 ########################################
 # vcs_info
-autoload -Uz vcs_info
-autoload -Uz add-zsh-hook
 
 zstyle ':vcs_info:git:*' check-for-changes true
 zstyle ':vcs_info:git:*' stagedstr "%F{yellow}!"
