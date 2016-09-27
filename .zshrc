@@ -31,7 +31,7 @@ SAVEHIST=1000000
 # プロンプト
 FACE_CHAR=("(*´ω｀*)" "(･∀･)ﾉ " "( ﾟД ﾟ ) " "(｡╹ω ╹｡)" "(´・ω ・｀)" "٩(\`･ω ･´)و")
 function _update_prompt_with_cute_faces() {
-PROMPT="%{$fg[yellow]%}%~
+  PROMPT="%{$fg[yellow]%}%~
 %{$fg[cyan]%} $FACE_CHAR[$[$RANDOM % ${#FACE_CHAR[@]} + 1]] ${reset_color}%(!.#.$)"
 }
 add-zsh-hook precmd _update_prompt_with_cute_faces
