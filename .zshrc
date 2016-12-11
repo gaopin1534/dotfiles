@@ -30,10 +30,10 @@ HISTFILE=~/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
 # プロンプト
-FACE_CHAR=("(*´ω｀*)" "(･∀･)ﾉ" "( ﾟД ﾟ )" "(｡╹ω ╹｡)" "(´・ω ・｀)" "٩(\`･ω ･´)و" "(๑˃̵ᴗ˂̵)و" "( ･⊝ ･ )" "(p*･ω ･)p")
+FACES=("(*´ω｀*)" "(･∀･)ﾉ" "( ﾟД ﾟ )" "(｡╹ω ╹｡)" "(´・ω ・｀)" "٩(\`･ω ･´)و" "(๑˃̵ᴗ˂̵)و" "( ･⊝ ･ )" "(p*･ω ･)p")
 function _update_prompt_with_cute_faces() {
   PROMPT="%{$fg[yellow]%}%~
-%{$fg[cyan]%}$FACE_CHAR[$[$RANDOM % ${#FACE_CHAR[@]} + 1]] ${reset_color}%(!.#.$)"
+%{$fg[cyan]%}$FACE_CHAR[$[$RANDOM % ${#FACES[@]} + 1]] ${reset_color}%(!.#.$)"
 }
 add-zsh-hook precmd _update_prompt_with_cute_faces
 
