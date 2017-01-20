@@ -56,6 +56,9 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 autoload -Uz compinit
 compinit -u
 
+# 補完をカーソルで選択可能に
+zstyle ':completion:*:default' menu select=2
+
 # 補完で小文字でも大文字にマッチさせる
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
@@ -189,8 +192,6 @@ elif which putclip >/dev/null 2>&1 ; then
     # Cygwin
     alias -g C='| putclip'
 fi
-
-
 
 ########################################
 # OS 別の設定
