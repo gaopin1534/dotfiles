@@ -554,7 +554,7 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>-1651 139 606 456 -1920 0 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>107 253 918 381 0 0 1280 800 </string>
+	<string>107 209 796 473 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>1 1 1277 775 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -747,7 +747,7 @@
 			<key>Blink Allowed</key>
 			<false/>
 			<key>Blinking Cursor</key>
-			<false/>
+			<true/>
 			<key>Blur</key>
 			<false/>
 			<key>Blur Radius</key>
@@ -783,13 +783,13 @@
 				<key>Alpha Component</key>
 				<real>0.25</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.90315288305282593</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.91000000000000003</real>
+				<real>0.97285056114196777</real>
 				<key>Red Component</key>
-				<real>0.65000000000000002</real>
+				<real>0.47212940454483032</real>
 			</dict>
 			<key>Cursor Text Color</key>
 			<dict>
@@ -1315,6 +1315,8 @@
 			<key>Use Bright Bold</key>
 			<true/>
 			<key>Use Canonical Parser</key>
+			<false/>
+			<key>Use Cursor Guide</key>
 			<false/>
 			<key>Use Italic Font</key>
 			<true/>
@@ -3018,6 +3020,10 @@
 	<false/>
 	<key>iTerm Version</key>
 	<string>3.0.14</string>
+	<key>kCPKSelectionViewPreferredModeKey</key>
+	<integer>0</integer>
+	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
+	<false/>
 	<key>moveToApplicationsFolderAlertSuppress</key>
 	<true/>
 </dict>
