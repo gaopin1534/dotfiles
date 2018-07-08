@@ -4,3 +4,4 @@ img
 .envrc
 npm-debug.log
 .tags*
+.mitm_scripts/
