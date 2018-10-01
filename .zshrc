@@ -151,6 +151,8 @@ alias hidedots='defaults write com.apple.finder AppleShowAllFiles FALSE;killall 
 alias la='ls -a'
 alias ll='ls -l'
 
+alias be='bundle exec'
+
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
