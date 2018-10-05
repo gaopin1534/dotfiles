@@ -173,6 +173,8 @@ alias sudo='sudo '
 alias -g L='| less'
 alias -g G='| grep'
 
+alias bi='bundle install --path=.bundle --binstubs=bundle_bin'
+
 # pecoの設定
 function peco-history-selection(){
     BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
