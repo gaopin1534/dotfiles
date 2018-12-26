@@ -9,6 +9,18 @@ export EDITOR="vim"
 export LC_ALL=ja_JP.UTF-8
 export PATH=$PATH:"/opt/local/bin:/opt/local/sbin"
 setopt no_global_rcs
+
+# hyper
+precmd() {
+   pwd=$(pwd)
+   cwd=${pwd##*/}
+   print -Pn "\e]0;$cwd\a"
+}
+
+preexec() {
+   printf "\033]0;%s\a" "${1%% *} | $cwd"
+}
+
 # anyenv
 if [ -d $HOME/.anyenv ] ; then
    export PATH="$HOME/.anyenv/bin:$PATH"
