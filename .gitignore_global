@@ -5,4 +5,5 @@ img
 npm-debug.log
 .tags*
 .mitm_scripts/
-vendor/bundle
+vendor/
+.bundle
