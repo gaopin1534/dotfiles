@@ -145,7 +145,8 @@ module.exports = {
     `hyper-search`,
     `hyperterm-paste`,
     `hyper-alt-click`,
-    `gitrocket`
+    `gitrocket`,
+    `hypercwd`
   ],
 
   // in development, you can create a directory under
