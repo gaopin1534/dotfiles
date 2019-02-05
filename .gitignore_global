@@ -7,3 +7,6 @@ npm-debug.log
 .mitm_scripts/
 vendor/
 .bundle
+.idea/
+yarn.lock
+
