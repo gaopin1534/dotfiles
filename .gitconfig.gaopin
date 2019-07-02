@@ -7,5 +7,6 @@
     gr = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
     clean-branch = "!f () { git checkout $1; git branch --merged|egrep -v '\\*|develop|master'|xargs git branch -d; };f"
     cp = cherry-pick
+    pushf = push --force-with-lease
 [ghq]
     root = ~/src
