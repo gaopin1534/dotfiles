@@ -8,6 +8,7 @@ export PATH=$PATH:$GOPATH/bin
 export EDITOR="vim"
 export LC_ALL=ja_JP.UTF-8
 export PATH=$PATH:"/opt/local/bin:/opt/local/sbin"
+export PATH=$PATH:"~/src/flutter/bin"
 setopt no_global_rcs
 
 # hyper
