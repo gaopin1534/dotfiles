@@ -10,3 +10,5 @@
     pushf = push --force-with-lease
 [ghq]
     root = ~/src
+[ghq "https://gitlab.com"]
+    vcs = git

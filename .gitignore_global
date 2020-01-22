@@ -9,4 +9,4 @@ vendor/
 .bundle
 .idea/
 yarn.lock
-
+bundle_bin
