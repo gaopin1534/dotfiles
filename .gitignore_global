@@ -10,3 +10,4 @@ vendor/
 .idea/
 yarn.lock
 bundle_bin
+.python-version
