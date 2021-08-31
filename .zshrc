@@ -11,6 +11,7 @@ export PATH=$PATH:"/opt/local/bin:/opt/local/sbin"
 export PATH=$PATH:"$HOME/src/flutter/bin"
 setopt no_global_rcs
 export PATH=$PATH:"$HOME/Library/Android/sdk/platform-tools"
+export PATH=$PATH:"$HOME/.composer/vendor/bin"
 
 # hyper
 precmd() {
