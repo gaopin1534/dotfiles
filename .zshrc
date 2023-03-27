@@ -11,7 +11,6 @@ export PATH=$PATH:"/opt/local/bin:/opt/local/sbin"
 export PATH=$PATH:"$HOME/src/flutter/bin"
 setopt no_global_rcs
 export PATH=$PATH:"$HOME/Library/Android/sdk/platform-tools"
-export PATH=$PATH:"$HOME/.composer/vendor/bin"
 
 # hyper
 precmd() {
@@ -225,3 +224,7 @@ case ${OSTYPE} in
         alias ls='ls -F --color=auto'
         ;;
 esac
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
