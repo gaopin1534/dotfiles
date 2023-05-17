@@ -11,3 +11,4 @@ vendor/
 yarn.lock
 bundle_bin
 .python-version
+*.hprof

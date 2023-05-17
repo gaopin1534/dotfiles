@@ -7,8 +7,10 @@ export GOPATH=$HOME
 export PATH=$PATH:$GOPATH/bin
 export EDITOR="vim"
 export LC_ALL=ja_JP.UTF-8
+export JAVA_HOME=`/usr/libexec/java_home`
 export PATH=$PATH:"/opt/local/bin:/opt/local/sbin"
 export PATH=$PATH:"$HOME/src/flutter/bin"
+export PATH=$JAVA_HOME:$PATH
 setopt no_global_rcs
 export PATH=$PATH:"$HOME/Library/Android/sdk/platform-tools"
 
